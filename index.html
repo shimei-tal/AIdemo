@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语单词听写练习</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 听写页 -->
+        <div id="dictation-area">
+            <div class="dictation-header">
+                <div class="dictation-progress">
+                    <span id="current-word">1</span>/<span id="total-word">6</span>
+                </div>
+                <div class="dictation-tip">音标、释义词组等</div>
+                <div class="dictation-decor">
+                    <span class="decor-mushroom"></span>
+                    <span class="decor-star"></span>
+                </div>
+            </div>
+            <div class="word-list">
+                <div class="word-item" id="word-0">
+                    <button class="play-button">🔊</button>
+                    <input type="text" class="word-input" placeholder="请输入单词">
+                    <button class="submit-word">提交</button>
+                    <span class="result-icon"></span>
+                    <div class="word-details hidden">
+                        <div class="word-info">
+                            <span class="word-text"></span>
+                            <span class="word-phonetic"></span>
+                            <button class="play-button small">🔊</button>
+                        </div>
+                        <div class="word-meaning"></div>
+                    </div>
+                </div>
+                <div class="word-item" id="word-1">
+                    <button class="play-button">🔊</button>
+                    <input type="text" class="word-input" placeholder="请输入单词">
+                    <button class="submit-word">提交</button>
+                    <span class="result-icon"></span>
+                    <div class="word-details hidden">
+                        <div class="word-info">
+                            <span class="word-text"></span>
+                            <span class="word-phonetic"></span>
+                            <button class="play-button small">🔊</button>
+                        </div>
+                        <div class="word-meaning"></div>
+                    </div>
+                </div>
+                <div class="word-item" id="word-2">
+                    <button class="play-button">🔊</button>
+                    <input type="text" class="word-input" placeholder="请输入单词">
+                    <button class="submit-word">提交</button>
+                    <span class="result-icon"></span>
+                    <div class="word-details hidden">
+                        <div class="word-info">
+                            <span class="word-text"></span>
+                            <span class="word-phonetic"></span>
+                            <button class="play-button small">🔊</button>
+                        </div>
+                        <div class="word-meaning"></div>
+                    </div>
+                </div>
+                <div class="word-item" id="word-3">
+                    <button class="play-button">🔊</button>
+                    <input type="text" class="word-input" placeholder="请输入单词">
+                    <button class="submit-word">提交</button>
+                    <span class="result-icon"></span>
+                    <div class="word-details hidden">
+                        <div class="word-info">
+                            <span class="word-text"></span>
+                            <span class="word-phonetic"></span>
+                            <button class="play-button small">🔊</button>
+                        </div>
+                        <div class="word-meaning"></div>
+                    </div>
+                </div>
+                <div class="word-item" id="word-4">
+                    <button class="play-button">🔊</button>
+                    <input type="text" class="word-input" placeholder="请输入单词">
+                    <button class="submit-word">提交</button>
+                    <span class="result-icon"></span>
+                    <div class="word-details hidden">
+                        <div class="word-info">
+                            <span class="word-text"></span>
+                            <span class="word-phonetic"></span>
+                            <button class="play-button small">🔊</button>
+                        </div>
+                        <div class="word-meaning"></div>
+                    </div>
+                </div>
+                <div class="word-item" id="word-5">
+                    <button class="play-button">🔊</button>
+                    <input type="text" class="word-input" placeholder="请输入单词">
+                    <button class="submit-word">提交</button>
+                    <span class="result-icon"></span>
+                    <div class="word-details hidden">
+                        <div class="word-info">
+                            <span class="word-text"></span>
+                            <span class="word-phonetic"></span>
+                            <button class="play-button small">🔊</button>
+                        </div>
+                        <div class="word-meaning"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dictation-footer">
+                <div class="progress-bar-bg">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <button id="submit-all" class="submit-button round">提交所有答案</button>
+            </div>
+        </div>
+
+        <!-- 结果页 -->
+        <div id="result-area" class="hidden">
+            <div class="result-header">
+                <div class="awesome-title">Awesome!</div>
+                <div class="star-list" id="star-list">
+                    <!-- 星星JS生成 -->
+                </div>
+            </div>
+            <div class="result-card-list" id="result-card-list">
+                <!-- 结果卡片JS生成 -->
+            </div>
+            <div class="result-footer">
+                <button id="retry-btn" class="result-btn">再来一次</button>
+                <button id="back-btn" class="result-btn">返回</button>
+            </div>
+        </div>
+    </div>
+    <script src="words.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
